@@ -1,19 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background_gradient">
 
-    <Button
-        android:id="@+id/signOutBtn"
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/optionbutton"
+            android:layout_margin="15dp"
+            />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello Name!"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#660096"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+        android:id="@+id/greetTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign_out"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_marginTop="0dp"
+            android:layout_below="@id/nameTextView"
+        android:text="Wanna start an adventure today?"
+        android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+            android:textColor="#660096"
+        tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/searchkey"
+            android:layout_margin="15dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card1"
+        app:cardElevation="4dp"
+        android:layout_below="@id/linearLayout"
+        android:layout_margin="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/map" />'
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card3"
+        app:cardElevation="4dp"
+        android:layout_below="@id/card1"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="20dp"
+            android:src="@drawable/bike2" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    
+
+
+
+</RelativeLayout>

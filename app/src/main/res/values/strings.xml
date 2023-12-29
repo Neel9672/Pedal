@@ -17,4 +17,5 @@
     <string name="enter_amount">Enter Amount</string>
     <string name="pay_now">Pay Now !!</string>
     <string name="payment_status">Payment Status</string>
+    <string name="welcome">Welcome</string>
 </resources>

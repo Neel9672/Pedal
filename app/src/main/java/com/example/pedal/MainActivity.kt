@@ -15,12 +15,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        auth = FirebaseAuth.getInstance()
-        signOutBtn = findViewById(R.id.signOutBtn)
+//        auth = FirebaseAuth.getInstance()
+//        signOutBtn = findViewById(R.id.signOutBtn)
+//
+//        signOutBtn.setOnClickListener {
+//            auth.signOut()
+//            startActivity(Intent(this, PhoneActivity::class.java))
+//        }
 
-        signOutBtn.setOnClickListener {
-            auth.signOut()
-            startActivity(Intent(this, PhoneActivity::class.java))
-        }
     }
 }

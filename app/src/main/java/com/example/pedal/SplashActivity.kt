@@ -1,14 +1,15 @@
 package com.example.pedal
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.MediaController
 import android.widget.VideoView
-import androidx.appcompat.app.AppCompatActivity
 
-class SplashScreenActivity : AppCompatActivity() {
-
+@SuppressLint("CustomSplashScreen")
+class SplashActivity : AppCompatActivity() {
     private lateinit var videoView: VideoView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +19,7 @@ class SplashScreenActivity : AppCompatActivity() {
         videoView = findViewById(R.id.videoView)
 
         // Set the path to your video file
-        val videoPath = "android.resource://" + packageName + "/" + R.raw.your_video // Replace with your video resource
+        val videoPath = "android.resource://" + packageName + "/" + R.raw.video
 
         val videoUri = Uri.parse(videoPath)
         videoView.setVideoURI(videoUri)

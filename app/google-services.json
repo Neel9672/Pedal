@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "102127626325",
+    "project_id": "pedal-293f0",
+    "storage_bucket": "pedal-293f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102127626325:android:dcfbdc4f20303c13544cdc",
+        "android_client_info": {
+          "package_name": "com.example.pedal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAykMNOcl9qXd6OTC2fQQXx213E7iIWvEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

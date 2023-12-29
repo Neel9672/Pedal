@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Pedal</string>
+    <string name="login_with_nmobile_number">Login with \nMobile number</string>
+    <string name="_91">+91</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="type_your_number">Type your number</string>
+    <string name="verify">Verify</string>
+    <string name="_0">0</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="otpimage">Otpimage</string>
+    <string name="sign_out">Sign out</string>
+    <string name="enter_your_aadhar_no">Enter your Aadhar No.</string>
+    <string name="aadhar_no">Aadhar No.</string>
+    <string name="submit">SUBMIT</string>
+    <string name="aadhar_no_img">Aadhar No</string>
+    <string name="payment_gateway_demo">BUDDY PAYMENT</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="pay_now">Pay Now !!</string>
+    <string name="payment_status">Payment Status</string>
+</resources>
